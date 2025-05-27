@@ -1,44 +1,62 @@
-# Frontend Internship Challenge – Tekly Studio
+# Crypto Asset Dashboard
 
-We’re looking for someone who can create user interfaces that are clean, responsive, and data-aware.
+This project is a cryptocurrency dashboard that allows users to search for and view price and volume data for different cryptocurrencies.
 
----
+## Project Setup
 
-## 🎨 Challenge Prompt
+```sh
+pnpm install
+```
 
-Create a basic crypto asset dashboard that:
-- Lets users input a symbol or pick from a dropdown
-- Fetches and displays price + volume data using a public API (e.g., CoinGecko)
-- Bonus: Include a chart or price movement visual
+### Compile and Hot-Reload for Development
 
-Use React, Vue, or your preferred frontend framework.
+```sh
+pnpm dev
+```
 
----
+### Type-Check, Compile and Minify for Production
 
-## 📦 What to Include
+```sh
+pnpm build
+```
 
-- Your frontend app files
-- Instructions for running locally
-- Screenshots or demo links (if possible)
-- A `README.md` summarizing:
-  - Tools used
-  - UI decisions
-  - What you’d enhance with more time
+## Features
 
----
+- Search for cryptocurrencies by symbol or select from a dropdown
+- View current price, market cap, volume, and 24h price change
+- Interactive price chart showing 7-day historical data
+- Responsive design that works on both mobile and desktop
 
-## 📝 How to Submit
+## Technologies Used
 
-1. Fork this repository.
-2. Complete the challenge in this folder in your fork.
-3. Fill out the submission form:  
-   👉 [Submit Here](https://forms.gle/bEpchsNKHHwcyZ47A)
+- Vue 3
+- TypeScript
+- Chart.js for data visualization
+- Axios for API requests
+- TailwindCSS for styling
+- Vite as build tool
+- pnpm as package manager
 
----
+## API
 
-## 🧠 Evaluation Criteria
+The application uses the public [CoinGecko API](https://www.coingecko.com/en/api) to fetch cryptocurrency data.
 
-- Clean UI/UX
-- Responsiveness and API integration
-- Code clarity and structure
-- Communication of design choices
+## UI Decisions
+
+- Clean, minimalist interface focused on data presentation
+- Responsive design using Tailwind CSS
+- Combined search input and dropdown for flexibility
+- Color-coded price changes (green for positive, red for negative)
+- Intuitive data cards to separate different metrics
+- Interactive chart with tooltips for detailed price information
+
+## Future Enhancements
+
+With more time, I would add:
+
+- Time period selector for the chart (24h, 7d, 30d, 1y)
+- Multiple currency support (EUR, JPY, etc.)
+- Watchlist functionality to track favorite cryptocurrencies
+- More detailed analytics and technical indicators
+- Dark mode support
+- Price alerts and notifications
