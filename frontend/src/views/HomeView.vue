@@ -89,8 +89,8 @@ export default defineComponent({
 <template>
   <div class="container mx-auto px-4 py-8">
     <header class="mb-8">
-      <h1 class="text-3xl font-bold text-center">Crypto Asset Dashboard</h1>
-      <p class="text-gray-600 text-center mt-2">Track cryptocurrency prices and market data</p>
+      <h1 class="text-3xl font-bold text-center text-blue-800">Cryptocurrency Dashboard</h1>
+      <p class="text-gray-600 text-center mt-2">Track real-time prices, market data, and historical trends</p>
     </header>    
     <div class="max-w-4xl mx-auto">      
       <!-- Search Component -->
